@@ -1,0 +1,45 @@
+{
+    "status": "success",
+    "data": [
+        {
+            "id": 1,
+            "class": "Primary 1",
+            "section": "A"
+        },
+        {
+            "id": 2,
+            "class": "Primary 1",
+            "section": "B"
+        },
+        {
+            "id": 3,
+            "class": "Primary 2",
+            "section": "A"
+        },
+        {
+            "id": 4,
+            "class": "Primary 2",
+            "section": "B"
+        },
+        {
+            "id": 5,
+            "class": "Primary 2",
+            "section": "B"
+        },
+        {
+            "id": 6,
+            "class": "Primary 2",
+            "section": "B"
+        },
+        {
+            "id": 7,
+            "class": "Primary 2",
+            "section": "B"
+        },
+        {
+            "id": 8,
+            "class": "Primary 2",
+            "section": "B"
+        }
+    ]
+}

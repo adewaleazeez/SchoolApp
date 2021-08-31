@@ -1,0 +1,45 @@
+{
+    "status": "success",
+    "data": [
+        {
+            "id": 1,
+            "code": "MATHS",
+            "description": "MATHEMATICS"
+        },
+        {
+            "id": 2,
+            "code": "ENG",
+            "description": "ENGLISH LANGUAGE"
+        },
+        {
+            "id": 3,
+            "code": "PHY",
+            "description": "PHYSICS"
+        },
+        {
+            "id": 4,
+            "code": "CHEM",
+            "description": "CHEMISTRY"
+        },
+        {
+            "id": 55,
+            "code": "CHEM",
+            "description": "CHEMISTRY"
+        },
+        {
+            "id": 6,
+            "code": "CHEM",
+            "description": "CHEMISTRY"
+        },
+        {
+            "id": 7,
+            "code": "CHEM",
+            "description": "CHEMISTRY"
+        },
+        {
+            "id": 8,
+            "code": "CHEM",
+            "description": "CHEMISTRY"
+        }
+    ]
+}

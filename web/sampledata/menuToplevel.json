@@ -1,0 +1,29 @@
+{
+    "status": "success",
+    "data": [
+        {
+            "id": 1,
+            "name": "Setup",
+            "icon": "fa fa-cog",
+            "url": ""
+        },
+        {
+            "id": 2,
+            "name": "Data Entry",
+            "icon": "fa  fa-keyboard-o",
+            "url": ""
+        },
+        {
+            "id": 3,
+            "name": "Users",
+            "icon": "fa  fa-users",
+            "url": ""
+        },
+        {
+            "id": 4,
+            "name": "Reports",
+            "icon": "fa  fa-newspaper-o",
+            "url": ""
+        }
+    ]
+}

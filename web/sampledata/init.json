@@ -1,0 +1,24 @@
+{
+    "status": "success",
+    "data": {
+        "user": {
+            "username": "adewale",
+            "firstName": "Adewale",
+            "lastName": "Azeez",
+            "displayPictureURL": "./images/default_avatar.jpg", "email":"adewale@gmail.com"
+        },
+        "account": {
+            "name": "Immaculate Secondary School"
+        },
+        "accountData": {
+            "activeStudents": 1000,
+            "teachers": 15,
+            "presentTeachers": 12,
+            "debtors": 103, "outstandingFees": 500000,
+            "presentStudents": 950,
+            "feesCollected": 20000000,
+            "feesCollectedToday": 1200000,
+            "currency": "₦"
+        }
+    }
+}

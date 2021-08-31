@@ -1,0 +1,20 @@
+{
+    "status": "success",
+    "data": [
+        {
+            "id": 1,
+            "name": "BUS FEE",
+            "bank": "ACCESS BANK"
+        },
+        {
+            "id": 2,
+            "name": "HOSTEL FEE",
+            "bank": "ECOBANK"
+        },
+        {
+            "id": 3,
+            "name": "SCHOOL FEE",
+            "bank": "CITY BANK"
+        }
+    ]
+}

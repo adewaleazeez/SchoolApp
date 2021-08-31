@@ -1,0 +1,21 @@
+{
+    "status": "success",
+    "data": [
+        {
+            "id": 1,
+            "name": "Communication Skills"
+        },
+        {
+            "id": 2,
+            "name": "Handicraft Work"
+        },
+        {
+            "id": 3,
+            "name": "Drawing"
+        },
+        {
+            "id": 4,
+            "name": "Indoor Games"
+        }
+    ]
+}

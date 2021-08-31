@@ -1,0 +1,29 @@
+{
+    "status": "success",
+    "data": [
+        {
+            "id": 1,
+            "session": "2018/2019",
+            "term": "First",
+            "start": "01/01/2018",
+            "end": "01/04/2018",
+            "current": false
+        },
+        {
+            "id": 2,
+            "session": "2018/2019",
+            "term": "Second",
+            "start": "01/05/2018",
+            "end": "01/08/2018",
+            "current": false
+        },
+        {
+            "id": 3,
+            "session": "2018/2019",
+            "term": "Third",
+            "start": "01/06/2018",
+            "end": "01/10/2018",
+            "current": true
+        }
+    ]
+}

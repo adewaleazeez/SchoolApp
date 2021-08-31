@@ -1,0 +1,63 @@
+<div style="width: 950px;" className="panel-body">
+    <div className="row">
+            <div style="width: 450px; margin: 20px auto; height: 50px; marginTop: 30px" className="col-md-6 col-sm-12">
+                    <div className="form-group">
+                            <label>Admin Email</label>
+                            <input type="text" className="form-control" placeholder="Admin Email" ref="admin_user_name" />
+                    </div>
+                    <div className="form-group">
+                            <label>School Level</label>
+                            <select className="form-control" ref="school_level">
+                                    <option value="0">--Select Level--</option>
+                                    <option value="1">Primary</option>
+                                    <option value="2">Secondary</option>
+                            </select>
+                    </div>
+                    <div className="form-group">
+                            <label>School Name</label>
+                            <input type="text" className="form-control" placeholder="School Name" ref="school_name" />
+                    </div>
+                    <div className="form-group">
+                            <label>Address Line 1</label>
+                            <input type="text" className="form-control" placeholder="Address Line 1" ref="line1" />
+                    </div>
+                    <div className="form-group">
+                            <label>Address Line 2</label>
+                            <input type="text" className="form-control" placeholder="Address Line 2" ref="line2" />
+                    </div>
+            </div>
+
+            <div style="width: 450px; margin: 50px auto; height: 50px; marginTop: 30px" className="col-md-6 col-sm-12">
+                    <div className="form-group">
+                            <label>Address Line 3</label>
+                            <input type="text" className="form-control" placeholder="Address Line 3" ref="line3" />
+                    </div>
+                    <div className="form-group">
+                            <label>Address Line 4</label>
+                            <input type="text" className="form-control" placeholder="Address Line 4" ref="line4" />
+                    </div>
+
+                    <div className="form-group">
+                            <label>Phone</label>
+                            <input type="tel" className="form-control" placeholder="Phone" ref="phone" />
+                    </div>
+                    <div className="form-group">
+                            <label>Fax</label>
+                            <input type="tel" className="form-control" placeholder="Fax" ref="fax" />
+                    </div>
+                    <div className="form-group">
+                            <label>Contact Email</label>
+                            <input type="email" className="form-control" placeholder="Contact Email" ref="school_email" />
+                    </div>
+            </div>
+    </div>
+
+    <div className="form-group">
+        <hr/>
+        <div className="btn-group pull-right" role="group">
+                <button onClick={this.showLogin} type="button" className="btn btn-gray btn-wide" ><i className="fa fa-times" />Close</button>
+                <button onClick={this.handleRegister} type="button" className="btn bg-primary btn-wide" ><i className="fa fa-check" /> Save</button>
+        </div>
+    </div>
+
+</div>

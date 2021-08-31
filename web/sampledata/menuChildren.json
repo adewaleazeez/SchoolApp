@@ -1,0 +1,149 @@
+{
+    "status": "success",
+    "data": [
+        {
+            "id": 1, "parentId": 1,
+            "name": "School Information",
+            "icon": "fa fa-building",
+            "url": "#/school-information"
+        },
+        {
+            "id": 2, "parentId": 1,
+            "name": "Classes and Sections",
+            "icon": "fa fa-clone",
+            "url": "#/classes-sections"
+        },
+        {
+            "id": 3, "parentId": 1,
+            "name": "Subjects",
+            "icon": "fa fa-briefcase",
+            "url": "#/subjects"
+        },
+        {
+            "id": 4,"parentId": 1,
+            "name": "Session and Term",
+            "icon": "fa fa-hourglass-half",
+            "url": "#/session-term"
+        },
+        {
+            "id": 5,"parentId": 1,
+            "name": "Fee Types",
+            "icon": "fa fa-reorder",
+            "url": "#/fee-types"
+        },
+        {
+            "id": 6,"parentId": 1,
+            "name": "Affective Skills",
+            "icon": "fa fa-group",
+            "url": "#/affective-skills"
+        },
+        {
+            "id": 7,"parentId": 1,
+            "name": "Psychomotor Traits",
+            "icon": "fa fa-gears",
+            "url": "#/psychomotor-traits"
+        },
+        {
+            "id": 8,"parentId": 1,
+            "name": "Scales and Grades",
+            "icon": "fa fa-list-ul",
+            "url": "#/scales-grades"
+        },
+        {
+            "id": 9,"parentId": 1,
+            "name": "Examination Grades",
+            "icon": "fa fa-list-ol",
+            "url": "#/examination-grades"
+        },
+        {
+            "id": 10,"parentId": 2,
+            "name": "Students Record",
+            "icon": "fa fa-file-text-o",
+            "url": "#/students"
+        },
+        {
+            "id": 11,"parentId": 2,
+            "name": "Grading",
+            "icon": "fa fa-percent",
+            "url": "#/grading"
+        },
+        {
+            "id": 12,"parentId": 2,
+            "name": "Personalities Assessment",
+            "icon": "fa fa-user-secret",
+            "url": "#/personalities-assessment"
+        },
+        {
+            "id": 13,"parentId": 2,
+            "name": "Fees Calculation",
+            "icon": "fa fa-calculator",
+            "url": "#/fees-calculation"
+        },
+        {
+            "id": 14,"parentId": 2,
+            "name": "Fees Payment",
+            "icon": "fa  fa-cc",
+            "url": "#/fees-payment"
+        },
+        {
+            "id": 22,"parentId": 3,
+            "name": "Manage Users",
+            "icon": "fa fa-users",
+            "url": "#/manage-users"
+        },
+        {
+            "id": 23,"parentId": 3,
+            "name": "Access Control",
+            "icon": "fa fa-lock",
+            "url": "#/access-control"
+        },
+        {
+            "id": 24,"parentId": 3,
+            "name": "Password Reset",
+            "icon": "fa fa-retweet",
+            "url": "#/password-reset"
+        } ,
+        {
+            "id": 15,"parentId": 4,
+            "name": "Students List",
+            "icon": "fa  fa-file-text",
+            "url": "#/students-list"
+        },
+        {
+            "id": 16,"parentId": 4,
+            "name": "Broad Sheet",
+            "icon": "fa fa-newspaper-o",
+            "url": "#/broad-sheet"
+        },
+        {
+            "id": 17,"parentId": 4,
+            "name": "Student Report Sheet",
+            "icon": "fa fa-check-square-o",
+            "url": "#/student-report-sheet"
+        },
+        {
+            "id": 18,"parentId": 4,
+            "name": "Fees Payment Report",
+            "icon": "fa fa-print",
+            "url": "#/fees-payment-report"
+        },
+        {
+            "id": 19,"parentId": 4,
+            "name": "Statement of Accounts",
+            "icon": "fa fa-book",
+            "url": "#/statement-account"
+        },
+        {
+            "id": 20,"parentId": 4,
+            "name": "Debtors Report",
+            "icon": "fa fa-ban",
+            "url": "#/debtors-report"
+        },
+        {
+            "id": 21,"parentId": 4,
+            "name": "Income Projections",
+            "icon": "fa fa-line-chart",
+            "url": "#/income-projections"
+        }
+    ]
+}

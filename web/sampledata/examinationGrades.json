@@ -1,0 +1,33 @@
+{
+    "status": "success",
+    "data": [
+        {
+            "id": 1,
+            "code": "A+",
+            "lowerRange":90,
+            "upperRange":100,
+            "remark":"Excellent"
+        },
+        {
+            "id": 2,
+            "code": "B",
+            "lowerRange":80,
+            "upperRange":89,
+            "remark":"Good"
+        },
+        {
+            "id": 3,
+            "code": "C",
+            "lowerRange":70,
+            "upperRange":79,
+            "remark":"Credit"
+        },
+        {
+            "id": 4,
+            "code": "D",
+            "lowerRange":50,
+            "upperRange":69,
+            "remark":"Pass"
+        }
+    ]
+}

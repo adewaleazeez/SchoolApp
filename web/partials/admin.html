@@ -1,0 +1,234 @@
+<div class="col-md-12 col-lg-10 animated rotateIn faster">
+    <div class="panel panel-primary border-3-top animated rotateIn faster">
+        <div class="panel-heading">
+            <div class="panel-title">
+                <h5>Admin Details</h5>
+            </div>
+        </div>
+        <div class="panel-body">
+            <form id="frmNewAdmin">
+                <div class="col-sm-12 col-md-4">
+                    <div class="form-group has-feedback" style="border: 2px solid #eee">
+                        <div class="user-info text-center">
+                            <img id="user_dp" style="width: 120px; height: 140px; cursor: pointer" src="./images/default_avatar.jpg" alt="lastName" class="img-circle profile-img"
+                                onClick="triggerFileInput()" />
+                            <input id="the-file-input" type="file" accept="image/*" onChange="imageChanged(this.id);"
+                                style="width: 0px; height: 0px; visibility: hidden" />
+                        </div>
+                    </div>
+                    <h5>Admin Passport(Click above)</h5>
+                </div>
+                
+                <div class="col-sm-12 col-md-4">
+                    <div class="form-group has-feedback">
+                        <label>Admin Id</label>
+                        <input type="text" class="form-control" id="txtAdminId" tabindex="1" onblur="(AdminId=this.value)" placeholder="Admin Id" required />
+                    </div>
+                    <div class="form-group has-feedback">
+                        <label>First Name</label>
+                        <input type="text" class="form-control" id="txtFirstName" tabindex="3" onblur="(FirstName=this.value)" placeholder="First Name" required />
+                    </div>
+                    <div class="form-group has-feedback">
+                        <label>Other Names</label>
+                        <input type="tel" class="form-control" id="txtOtherNames" tabindex="5" onblur="(OtherNames=this.value)" placeholder="Other Names" />
+                    </div>
+                    <br style="clear: both" />
+                    
+                </div>
+                
+                <div class="col-sm-12 col-md-4">
+                    <div class="form-group has-feedback">
+                        <label>Admin Email</label>
+                        <input type="text" class="form-control" id="txtAdminEmail" tabindex="2" onblur="(AdminEmail=this.value)" placeholder="Admin Email" required />
+                    </div>
+                    <div class="form-group has-feedback">
+                        <label>Lastname</label>
+                        <input type="text" class="form-control" id="txtLastName" tabindex="4" onblur="(LastName=this.value)" placeholder="Last Name" required />
+                    </div>
+                    <div class="form-group has-feedback">
+                        <label>Phone Number</label>
+                        <input type="tel" class="form-control" id="txtPhoneNumber" tabindex="6" onblur="(PhoneNumber=this.value)" placeholder="Phone Number" required />
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <h5>&nbsp;</h5>
+    <div class="panel panel-primary modal vert-center fade animated rotateIn faster" data-backdrop="false" id="ImageArea" tabIndex="-1" role="dialog" aria-labelledby="modal6Label" style="display: none" >
+        <div class="modal-dialog  modal-md" role="document">
+            <div class="modal-content">
+                <div class="modal-header" style="borderBottom: 0">
+                    <h5 class="bold modal-title" id="modal6Label"> 
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                    </h5>
+                </div>
+                <div class="modal-body">
+                    <div class="panel">
+                        <div class="panel-heading">
+                            <div class="panel-title">
+                                <h5></h5>
+                            </div>
+                        </div>
+                        <div class="panel-body">
+                            <div id="PreviewImage" style="width: 100%; maxWidth: 100%"></div>
+                            <hr />
+                            <div class="row" id="user-results">
+                                <div class="col-sm-12">
+                                    <div class="widget-11-table auto-overflow" style="height: auto; textAlign: center">
+                                       <button type="button" class="btn btn-lg btn-info btn-wide btn-rounded" onClick="saveNewImage()" style="margin: 0 auto; display: block" >Save Image</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(document).ready(function () {
+        if(AdminImageBase64){
+            $('#user_dp').attr('src', AdminImageBase64);
+        }
+        if(AdminId){
+            $('#txtAdminId').val(AdminId); 
+        }
+        if(AdminEmail){
+            $('#txtAdminEmail').val(AdminEmail);
+        }
+        if(FirstName){
+            $('#txtFirstName').val(FirstName);
+        }
+        if(LastName){
+            $('#txtLastName').val(LastName);
+        }
+        if(OtherNames){
+            $('#txtOtherNames').val(OtherNames);
+        }
+        if(PhoneNumber){
+            $('#txtPhoneNumber').val(PhoneNumber);
+        }
+    });
+            
+    triggerFileInput = function () {
+        $('#the-file-input').trigger('click');
+    };
+
+    getImageData = function () {
+        return $WorkingImage.cropper('getCroppedCanvas').toDataURL('image/jpeg');
+    };
+    FilePresent = false;
+            
+    renderImage = function (file) {
+        var reader = new FileReader();
+        reader.onload = function (event) {
+            the_url = event.target.result;
+            $('#PreviewImage').html("<img id='ImageToCrop' src='" + the_url + "' />");
+            InitializeCropper();
+        };
+        reader.onerror = function (event) {
+            FilePresent = false;
+        };
+        reader.readAsDataURL(file);
+    };
+
+    InitializeCropper = function () {
+        $WorkingImage = $("#ImageToCrop");
+
+        var width = 200;
+        var height = 200;
+        var CropperSize = 200;
+        if (width < height) {
+            CropperSize = width;
+        } else {
+            CropperSize = height;
+        }
+
+        $WorkingImage.cropper({
+            aspectRatio: 1 / 1,
+            data: {
+                width: CropperSize,
+                height: CropperSize
+            }
+        });
+
+        FilePresent = true;
+    };
+
+    /*var ImageBase64 = "";
+    SaveNewImage = function () {
+        ImageBase64 = GetImageData();
+        $('#user_dp').attr('src', ImageBase64);
+        $WorkingImage.cropper('destroy');
+        $('#ImageArea').modal('hide');
+    };*/
+    
+    saveNewImage = function () {
+        AdminImageBase64 = this.getImageData();
+        //this.updatePicture(ImageBase64);
+        //$WorkingImage.cropper('destroy');
+        $('#user_dp').attr('src', AdminImageBase64);
+        HideModal("ImageArea");
+        //$WorkingImage.cropper('destroy');
+        //$('#ImageArea').modal('hide');
+
+    };
+
+    imageChanged = function (id) {
+        //var fileInput = this;
+        $('#ImageArea').modal('show');
+        //setTimeout(() =>
+        let obj = document.getElementById(id);
+        //this.renderImage(this.fileUploaded.files[0]);
+        this.renderImage(obj.files[0]);
+        //    , 1000);
+    };
+
+
+    updatePicture = function (Base64Image) {
+        this.setState({ updating: true });
+        APICall("updatedp", { Base64Image: Base64Image }, 'POST')
+            .then(data => {
+
+                if (data.status === "success") {
+                    this.setState({ updating: false });
+                    this.reloadUser();
+                    this.props.loadInit();
+                    HideModal("ImageArea");
+                } else {
+                    MessageAlert("error", data.data);
+                }
+            }) // JSON-string from `response.json()` call
+            .catch(error => {
+                this.setState({ updating: false });
+                console.error(error);
+                MessageAlert("error", "An error occurred, reload page and retry", "Error");
+            });
+    };
+
+    reloadUser = function () {
+        this.setState({ loading: true });
+        APICall("user.json", {}, 'GET')
+            .then(data => {
+                if (data.status === "success") {
+                    this.setState({ loading: false, user: data.data });
+                } else {
+                    MessageAlert("error", data.data);
+                }
+            }) // JSON-string from `response.json()` call
+            .catch(error => {
+                MessageAlert("error", "An error occurred, reload page and retry", "Error");
+            });
+    };
+
+    updateProfile = function () {
+        this.setState({ updating: true });
+        //setTimeout(() => {
+            MessageAlert("success", "Record updated successfully");
+            this.setState({ updating: false });
+            this.loadData();
+        //}, 1500);
+    };
+</script>

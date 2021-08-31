@@ -1,0 +1,53 @@
+{
+    "status": "success",
+    "data": [
+        {
+            "id": 1,
+            "MatricNumber": "10001",
+            "Studentname": "Adewle Azeez",
+            "Gender": "Male",
+            "Age": "30",
+            "Status": "Graduated"
+        },
+        {
+            "id": 2,
+            "MatricNumber": "10002",
+            "Studentname": "Ayinla Akeem",
+            "Gender": "Male",
+            "Age": "28",
+            "Status": "Active"
+        },
+        {
+            "id": 3,
+            "MatricNumber": "10003",
+            "Studentname": "Aliyah Raheem",
+            "Gender": "Female",
+            "Age": "25",
+            "Status": "Graduated"
+        },
+        {
+            "id": 4,
+            "MatricNumber": "10004",
+            "Studentname": "Aliy Akeem",
+            "Gender": "Male",
+            "Age": "23",
+            "Status": "Active"
+        },
+        {
+            "id": 5,
+            "MatricNumber": "10005",
+            "Studentname": "Halimah Afeez",
+            "Gender": "Female",
+            "Age": "15",
+            "Status": "Active"
+        },
+        {
+            "id": 6,
+            "MatricNumber": "10006",
+            "Studentname": "Ayomiposi Azeez",
+            "Gender": "Male",
+            "Age": "25",
+            "Status": "Graduated"
+        }
+    ]
+}

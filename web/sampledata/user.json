@@ -1,0 +1,12 @@
+{
+    "status": "success",
+    "data": {
+        "id":1,
+        "username": "adewale",
+        "firstName": "Adewale",
+        "lastName": "Azeez",
+        "displayPictureURL": "./images/default_avatar.jpg", 
+        "email":"adewale@gmail.com",
+        "phone":"+2348012345678"
+    }
+}

@@ -1,0 +1,20 @@
+{
+    "status": "success",
+    "data": [
+        {
+            "id": 1,
+            "scale": "5",
+            "grade": "Excellent"
+        },
+        {
+            "id": 2,
+            "scale": "4",
+            "grade": "Very Good"
+        },
+        {
+            "id": 3,
+            "scale": "3",
+            "grade": "Good"
+        }
+    ]
+}
