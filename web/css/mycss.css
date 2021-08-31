@@ -1,0 +1,149 @@
+      /*#site {
+        position: absolute;
+        z-index: 1;
+        top : 1000px;
+        left : 10px;
+        color: #330099;
+        background-color: #ddd;
+        padding: 5px;
+        border: 1px solid gray;
+      }*/
+
+      body {
+        margin: 0;
+        padding: 0;
+        background: white;
+        font: times, 80% verdana, arial, sans-serif;
+      }
+
+		#container {
+		  width:970px;
+		  text-align: left;
+		  margin:5px auto 0 auto;
+		  background:url(../images/pagebg.jpg) top left repeat-x #fff;
+		  border:1px solid #ccc;
+		  /*border-bottom:none;*/
+		  padding-bottom: 5px;
+		}
+
+		#container2 {
+		  width:970px;
+		  text-align: left;
+		  margin:5px auto 0 auto;
+		  background:url(../images/pagebg.jpg) top left repeat-x #fff;
+		  border:1px solid #ccc;
+		  /*border-bottom:none;*/
+		  padding-bottom: 5px;
+		}
+
+		#client_div {
+		  width:970px;
+		  text-align: left;
+		  margin:5px auto 0 auto;
+		  background:url(../images/pagebg.jpg) top left repeat-x #ccc;
+		  border:1px solid #fff;
+		  /*border-bottom:none;*/
+		  padding-bottom: 5px;
+		}
+
+		#client_div2 {
+		  width:960px;
+		  text-align: left;
+		  margin:5px auto 0 auto;
+		  background:url(../images/pagebg.jpg) top left repeat-x #ccc;
+		  border:1px solid #fff;
+		  /*border-bottom:none;
+		  padding-bottom: 20px;*/
+		}
+
+		#client_div3 {
+		  width:970px;
+		  text-align: left;
+		  margin:5px auto 0 auto;
+		  background:url(../images/pagebg.jpg) top left repeat-x #ccc;
+		  border:1px solid #fff;
+		  /*border-bottom:none;
+		  padding-bottom: 20px;*/
+		}
+
+      #menu {
+        position: absolute;  /*{absolute, relative, fixed} Menu position that can be changed at will*/
+        /*top: 117;*/
+        left: 0;
+        z-index: 150;
+        width: 100%; /* precision for Opera */
+
+      }
+
+      dl, dt, dd, ul, li {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+      }
+
+      #menu dl {
+        color: #330099;
+        float: left;
+        text-align: left;
+        width: 11em;
+      }
+
+      #menu dt {
+        width: 13em;
+        cursor: pointer;
+        font-weight: bold;
+        background: #336699;
+        border: 0px solid;
+        margin: 1px;
+      }
+
+      #menu dd {
+        display: none;
+        border: 1px solid #3300CC;
+      }
+
+      #menu li {
+        font-weight: bold;
+        text-align: left;
+        background: #336699;
+        border: 1px #3300CC;
+      }
+
+      #menu li a, #menu dt a {
+        color: #330099;
+        text-decoration: none;
+        display: block;
+        height: 100%;
+        border: 0 none;
+      }
+
+      #menu li a:hover, #menu li a:focus, #menu dt a:hover, #menu dt a:focus {
+        background: #FFFF00;
+      }
+
+      /*msgRegister{
+        position: absolute; top : 150px; left : 150px; border-style: solid; border-width: 1px;
+        border-color: #3300CC; text-align: left; background-color: #CCFFFF;
+        padding: 1.5cm; width: 50%; font-weight: bold;
+      }
+
+      msgSuccess{
+        border-style: solid; border-width: 1px; border-color: #3300CC; text-align: left;
+        background-color: #CCFFFF; width: 50%;  font-weight: bold; margin-left: 0
+      }
+
+      msgFail{
+        border-style: solid; border-width: 1px; border-color: #3300CC; text-align: left;
+        background-color: #CCCC00; width: 50%; font-weight: bold; margin-left: 0
+      }*/
+
+      even{
+        border-style: solid; border-width: 1px; border-color: #3300CC; text-align: left;
+        background-color: #CC9933; font-weight: bold;
+      }
+
+      odd{
+        border-style: solid; border-width: 1px; border-color: #3300CC; text-align: left;
+        background-color: #626642; font-weight: bold;
+      }
+

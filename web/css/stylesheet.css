@@ -1,0 +1,65 @@
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	background-color: #e5e96e;
+	margin-top: 80px;
+	color: #999999;
+}
+
+td {
+	font-size: 12px;
+}
+
+a {text-decoration:none} 
+
+a:link {color: #999999}
+
+a:visited {color: #999999}
+
+a:hover {color: #E90649}
+
+a:active {color: #999999}
+
+a.highLightLink:link {color: #E90649}
+
+a.highLightLink:visited {color: #E90649}
+
+a.highLightLink:hover {color: #999999}
+
+a.highLightLink:active {color: #E90649}
+
+a.highLightLink2:link {color: #0099CC}
+
+a.highLightLink2:visited {color: #0099CC}
+
+a.highLightLink2:hover {color: #E90649}
+
+a.highLightLink2:active {color: #0099CC}
+
+.headerText {
+	font-size:20px; 
+}
+
+.headerText2 {
+	font-size:20px; 
+	color: #0099CC
+}
+
+.highLightText {
+	color: #E90649
+}
+
+.highLightText2 {
+	color: #0099CC
+}
+
+.errorMessage {
+	color: #E90649
+}
+
+.box {
+	border:2px; 
+	border-color:#999999; 
+	border-style:solid;
+	margin:100;
+}
